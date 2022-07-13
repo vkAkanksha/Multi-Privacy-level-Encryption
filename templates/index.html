@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Files</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <div class="container main-container">
+        <div class="card card-big bg-dark">
+            <div class="card-body">
+                <div class="container">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="\">Encrypt</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link link-white" href="/dec">Decrypt</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card card-center">
+                    <div class="card-body">
+                        <form action="/try.html" method="POST" enctype="multipart/form-data">
+                            <!-- <label for="formFileMultiple" class="form-label">
+                                <p>Select a file</p>
+                            </label> -->
+                            <div class="container">
+                                <input type="file" name="file" />
+                                <input type="password" name="key" placeholder="Enter key" />
+                                <span class="ml-2">
+                                    <button id="encbut" type="submit" name="submit" class="btn btn-dark btn-block ml-2">
+                                        Encrypt
+                                    </button>
+                                </span>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
